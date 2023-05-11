@@ -23,9 +23,7 @@ function NewProject() {
            }).then((resp) => resp.json())
            .then((data) => {
                 //redirect
-                console.log('teste');
-                navigate('/projects', { message: 'Projeto criado com sucesso'});
-                console.log('teste');
+                navigate('/projects');
            })
            .catch(err => console.log(err));
     }
